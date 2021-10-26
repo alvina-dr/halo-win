@@ -370,7 +370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -922, y: -366.7452}
+  m_AnchoredPosition: {x: -762, y: -276.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &524754634
@@ -491,6 +491,7 @@ MonoBehaviour:
   bullet: {fileID: 364924348157034987, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
+  DamageValue: 3
   gameManager: {fileID: 1172741407}
   spawnPoint: {fileID: 143224918}
   zombies: []
@@ -584,8 +585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 364924348157034987, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
-  toAttack: {fileID: 5893291569304710391, guid: e943035cdcbd04042867a30bd572a074, type: 3}
+  toAttack: {fileID: 0}
   attackCooldown: 1
+  DamageValue: 3
   gameManager: {fileID: 1172741407}
   spawnPoint: {fileID: 810431347}
   zombies: []
@@ -667,6 +669,7 @@ MonoBehaviour:
   bullet: {fileID: 364924348157034987, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
+  DamageValue: 3
   gameManager: {fileID: 1172741407}
   spawnPoint: {fileID: 686737117}
   zombies: []
@@ -1079,7 +1082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3599699892668908398, guid: bb3a2f50349410545b0cb5d4b299d433, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -167.8
+      value: -88.4
       objectReference: {fileID: 0}
     - target: {fileID: 3599699892668908398, guid: bb3a2f50349410545b0cb5d4b299d433, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1172,6 +1175,14 @@ PrefabInstance:
       value: 56.249
       objectReference: {fileID: 0}
     - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1201,11 +1212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 692.5
+      value: 563.4
       objectReference: {fileID: 0}
     - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 589.74524
+      value: 431.4
       objectReference: {fileID: 0}
     - target: {fileID: 1615225112810599999, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1246,7 +1257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022743053821280142, guid: 2988df6b576b4df42a88caeebe78200c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.5
+      value: 112.5
       objectReference: {fileID: 0}
     - target: {fileID: 2022743053821280142, guid: 2988df6b576b4df42a88caeebe78200c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1308,7 +1319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6501564590599097231, guid: c01785217a515524d96382c84b7d60f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -67.8
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 6501564590599097231, guid: c01785217a515524d96382c84b7d60f7, type: 3}
       propertyPath: m_LocalPosition.z

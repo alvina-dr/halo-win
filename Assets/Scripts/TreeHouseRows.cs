@@ -7,6 +7,7 @@ public class TreeHouseRows : MonoBehaviour
     public GameObject bullet;
     public GameObject toAttack;
     public float attackCooldown;
+    public int DamageValue;
     private float attackTime;
     public GameManager gameManager;
     public SpawnPoint spawnPoint;
@@ -38,7 +39,9 @@ public class TreeHouseRows : MonoBehaviour
         {
             if (attackTime <= Time.time)
             {
-                Instantiate(bullet, transform);
+                GameObject bulletInstance = Instantiate(bullet);
+                bulletInstance.transform.position = this.transform.position;
+                bulletInstance.GetComponent<Bullets>().DamageValue = DamageValue;
                 attackTime = Time.time + attackCooldown;
             }
         }
