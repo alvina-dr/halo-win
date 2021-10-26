@@ -107,9 +107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b25f01fad6ec24e8ad4949c66fc99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
-  damagePerSec: 5
+  health: 20
   speed: 0.5
+  attackDamage: 5
 --- !u!1 &6547448743254541034
 GameObject:
   m_ObjectHideFlags: 0
