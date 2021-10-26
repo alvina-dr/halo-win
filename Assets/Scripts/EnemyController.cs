@@ -19,6 +19,9 @@ public class EnemyController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision) 
     {
+        if (collision.gameObject.tag == "Row") {
+            
+        }
         if (collision.gameObject.layer == 10)
         {
             isStopped = true;
