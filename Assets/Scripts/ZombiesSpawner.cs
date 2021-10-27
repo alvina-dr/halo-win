@@ -13,10 +13,13 @@ public class ZombiesSpawner : MonoBehaviour
         {
             if (zombie.isSpawned == false && zombie.spawnTime <= Time.time)
             {
+                zombie.Spawner = Random.Range(0, 3);
                 GameObject zombieInstance = Instantiate(zombiesPrefabs[(int)zombie.zombieType], transform.GetChild(zombie.Spawner).transform);
                 transform.GetChild(zombie.Spawner).GetComponent<SpawnPoint>().zombies.Add(zombieInstance);
                 zombie.isSpawned = true;
             }
+            
+            
         }
     }
 }

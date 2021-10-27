@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
     public float bulletSpeed;
+    public int DamageValue;
     public bool isStopped = false;
 
     void Update()
@@ -14,9 +15,10 @@ public class Bullets : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision) 
     {
-        if (collision.gameObject.layer == 12)
+        if (collision.gameObject.layer == 11)
         {
-            isStopped = true;
+            collision.gameObject.GetComponent<EnemyController>().ReceiveDamage(DamageValue);
+            Destroy(this.gameObject);
         }
     }
 }
