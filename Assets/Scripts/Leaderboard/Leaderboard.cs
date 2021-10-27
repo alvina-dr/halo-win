@@ -61,6 +61,12 @@ public static class Leaderboard {
     public static ScoreEntry GetEntry(int index) {
         return Entries[index];
     }
+
+    public static void Clear() {
+        for (int i = 0; i < EntryCount; ++i)
+            s_Entries[i] = new ScoreEntry("", 0);
+        SaveScores();
+    }
  
     public static void Record(string name, int score) {
         Entries.Add(new ScoreEntry(name, score));
