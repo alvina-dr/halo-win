@@ -7,7 +7,6 @@ public class TreeHouse : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-    public SpawnPoint spawnPoint;
  
     void Start()
     {
@@ -16,20 +15,33 @@ public class TreeHouse : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         TakeDamage(20);
+    //     }
+    // }
 
-    void TakeDamage(int damage)
+    // void TakeDamage(int damage)
+    // {
+    //     if (currentHealth > 0)
+    //     {
+    //         currentHealth -= damage;
+    //         healthBar.SetHealth(currentHealth);
+    //     }   
+    // }
+
+    public void ReceiveDamage(int damage)
     {
-        if (currentHealth > 0)
+        currentHealth = currentHealth - damage;
+         
+        if (currentHealth <= 0)
         {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
-        }   
+            currentHealth = 0;
+            Destroy(this.gameObject);                    
+        }
+         
+        healthBar.SetHealth(currentHealth);
     }
 }

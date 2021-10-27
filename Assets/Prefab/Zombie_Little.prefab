@@ -191,4 +191,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   speed: 1
-  attackDamage: 2
+  attackCooldown: 0.5
+  attackDamage: 1

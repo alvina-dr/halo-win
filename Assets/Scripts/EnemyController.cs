@@ -6,8 +6,8 @@ public class EnemyController : MonoBehaviour
 {
     public int health;
     public float speed;
+    public float attackCooldown;
     public int attackDamage;
-    private int damage;
     private bool isStopped;
 
     void FixedUpdate() 
@@ -23,8 +23,24 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.gameObject.layer == 10)
         {
+            StartCoroutine(Attack(collision));
             isStopped = true;
         }
+    }
+
+    IEnumerator Attack(Collider2D collision)
+    {
+        if (collision == null)
+        {
+            Debug.Log("GAME OVER");
+        }
+        else
+        {
+            collision.gameObject.GetComponent<TreeHouse>().ReceiveDamage(attackDamage);
+            yield return new WaitForSeconds(attackCooldown);
+            StartCoroutine(Attack(collision));            
+        }
+
     }
 
     public void ReceiveDamage(int damage)
