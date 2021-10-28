@@ -116,6 +116,10 @@ public class LeaderboardTestGUI : MonoBehaviour {
             _scoreInput = "0";
         }
 
+        if (GUILayout.Button("Clear")) {
+            Leaderboard.Clear();
+        }
+
     }
 }
 
