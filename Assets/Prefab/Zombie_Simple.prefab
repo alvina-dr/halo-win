@@ -112,7 +112,6 @@ MonoBehaviour:
   attackCooldown: 1
   attackDamage: 5
   candyLoot: 20
-  noDestroy: {fileID: 0}
 --- !u!1 &6547448743254541034
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +227,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: fde2b9d35d7962948a21f015bcaafe73, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: fde2b9d35d7962948a21f015bcaafe73, type: 2}
+  - {fileID: 7400000, guid: 45466b3720debe3498f38d87a67dcb77, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

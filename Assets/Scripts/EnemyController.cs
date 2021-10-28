@@ -38,11 +38,15 @@ public class EnemyController : MonoBehaviour
     {
         if (collision == null)
         {
+            this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", false);
+            isStopped = false;
             Debug.Log("GAME OVER");
+
         }
         else
         {
             collision.gameObject.GetComponent<TreeHouse>().ReceiveDamage(attackDamage);
+            this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", true);
             yield return new WaitForSeconds(attackCooldown);
             StartCoroutine(Attack(collision));            
         }
