@@ -102,10 +102,10 @@ public class LeaderboardTestGUI : MonoBehaviour {
 
         
  
-        _nameInput = GUILayout.TextField(_nameInput);
+        _nameInput = PlayerPrefs.GetString("nameKey", "Unnamed");
         _scoreInput = GUILayout.TextField(_scoreInput);
  
-        if (GUILayout.Button("Record")) {
+        if (gameObject.activeSelf) {
             int score;
             int.TryParse(_scoreInput, out score);
  
@@ -116,9 +116,9 @@ public class LeaderboardTestGUI : MonoBehaviour {
             _scoreInput = "0";
         }
 
-        if (GUILayout.Button("Clear")) {
-            Leaderboard.Clear();
-        }
+        // if (GUILayout.Button("Clear")) {
+        //     Leaderboard.Clear();
+        // }
 
     }
 }

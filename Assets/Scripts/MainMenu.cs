@@ -11,7 +11,12 @@ public class MainMenu : MonoBehaviour
 
 
     public void PlayGame (){
+<<<<<<< HEAD
+        
+        //StartCoroutine(SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
+=======
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+>>>>>>> 4aa768a20c18f2dc520f7ac7b57172b07c3c3cd8
     }
 
     // IEnumerator LoadScene(int levelIndex){

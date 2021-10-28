@@ -5,7 +5,7 @@ using TMPro;
 
 public class SetPlayerName : MonoBehaviour
 {
-    public TMP_InputField PlayerNameSelector;
+    public TMP_InputField PlayerNameText;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +16,16 @@ public class SetPlayerName : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void setName(string PlayerName){
-        PlayerPrefs.SetString(PlayerName, PlayerNameSelector.text);
-        // Debug.Log (PlayerName.value);
+    public void setName(){
+
+        var nameKey = "";
+        PlayerPrefs.SetString(nameKey, PlayerNameText.text);
     }
+
+
 
     // void GetString(string PlayerNameText, value Thiago)
     // {
