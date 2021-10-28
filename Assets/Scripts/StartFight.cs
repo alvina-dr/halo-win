@@ -16,7 +16,7 @@ public class StartFight : MonoBehaviour
     void Start() {
         cameraObject = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
         cameraObject.transform.position = new Vector3(-165, -20, -1);
-        cameraObject.orthographicSize = 180f;
+        cameraObject.orthographicSize = 220f;
     }
 
     void Update() 
