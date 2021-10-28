@@ -29,11 +29,11 @@ public class CommonVariables : MonoBehaviour
         candyCount += number;
     }
 
-    void subCandy(int number) {
+    public void subCandy(int number) {
         candyCount -= number;
     }
     
-    void addScore(int number) {
+    public void addScore(int number) {
         score += number;
     }
 }

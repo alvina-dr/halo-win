@@ -8,6 +8,7 @@ TagManager:
   - NoDestroy
   - Spawner
   - Treehouse
+  - StartFight
   layers:
   - Default
   - TransparentFX
