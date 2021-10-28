@@ -21,7 +21,7 @@ public class SetPlayerName : MonoBehaviour
 
     public void setName(string PlayerName){
         PlayerPrefs.SetString(PlayerName, PlayerNameSelector.text);
-        Debug.Log (PlayerName.value);
+        // Debug.Log (PlayerName.value);
     }
 
     // void GetString(string PlayerNameText, value Thiago)
