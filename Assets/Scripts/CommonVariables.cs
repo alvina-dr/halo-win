@@ -8,6 +8,7 @@ public class CommonVariables : MonoBehaviour
 
     public int candyCount = 0;
     public Text candyCountText;
+    public GameObject treeHouse;
 
     public int score = 0;
     //public Text scoreText;
@@ -21,11 +22,7 @@ public class CommonVariables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        candyCountText.text = "" + candyCount;
-        if (Input.GetKeyDown("space")) { //Pour tester à enlever plus tard
-            candyCount += 10;
-        }
-        
+        candyCountText.text = "" + candyCount;        
     }
 
     public void addCandy(int number) {

@@ -12,8 +12,10 @@ public class EnemyController : MonoBehaviour
     public int candyLoot = 10;
     GameObject noDestroy;
 
+
     void Start() {
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
+        //numberAllZombie = GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().zombies.Count;
     }
 
     void FixedUpdate() 
@@ -38,11 +40,15 @@ public class EnemyController : MonoBehaviour
     {
         if (collision == null)
         {
-            Debug.Log("GAME OVER");
+            this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", false);
+            isStopped = false;
+            //Debug.Log("GAME OVER");
+
         }
-        else
+        else if (collision = GameObject.FindGameObjectWithTag("Treehouse").GetComponent<Collider2D>())
         {
             collision.gameObject.GetComponent<TreeHouse>().ReceiveDamage(attackDamage);
+            this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", true);
             yield return new WaitForSeconds(attackCooldown);
             StartCoroutine(Attack(collision));            
         }
@@ -55,6 +61,8 @@ public class EnemyController : MonoBehaviour
         {
             transform.parent.GetComponent<SpawnPoint>().zombies.Remove(this.gameObject);
             noDestroy.GetComponent<CommonVariables>().addCandy(candyLoot);
+            GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().numberZombieDead += 1;
+            //Debug.Log(GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().numberZombieDead);
             Destroy(this.gameObject);
         }
         else 

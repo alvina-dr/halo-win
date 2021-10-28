@@ -6,6 +6,13 @@ public class ZombiesSpawner : MonoBehaviour
 {
     public List<GameObject> zombiesPrefabs;
     public List<Zombie> zombies;
+    public int numberZombieDead = -10;
+    public int numberAllZombie;
+
+    void Start() {
+        numberAllZombie = zombies.Count;
+        numberZombieDead = 0;
+    }
 
     private void Update() 
     {
@@ -17,9 +24,7 @@ public class ZombiesSpawner : MonoBehaviour
                 GameObject zombieInstance = Instantiate(zombiesPrefabs[(int)zombie.zombieType], transform.GetChild(zombie.Spawner).transform);
                 transform.GetChild(zombie.Spawner).GetComponent<SpawnPoint>().zombies.Add(zombieInstance);
                 zombie.isSpawned = true;
-            }
-            
-            
+            } 
         }
     }
 }

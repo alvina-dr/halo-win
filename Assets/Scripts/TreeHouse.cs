@@ -7,30 +7,17 @@ public class TreeHouse : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    SpriteRenderer threeHouseCurrentSprite;
+    public Sprite[] spriteArrayTreeHouse;
+    public int houseLevel = 1;
  
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        threeHouseCurrentSprite = this.gameObject.GetComponentInChildren<SpriteRenderer>();
     }
 
-
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         TakeDamage(20);
-    //     }
-    // }
-
-    // void TakeDamage(int damage)
-    // {
-    //     if (currentHealth > 0)
-    //     {
-    //         currentHealth -= damage;
-    //         healthBar.SetHealth(currentHealth);
-    //     }   
-    // }
 
     public void ReceiveDamage(int damage)
     {
@@ -43,5 +30,12 @@ public class TreeHouse : MonoBehaviour
         }
          
         healthBar.SetHealth(currentHealth);
+    }
+
+    public void LevelUpTreeHouse() {
+        if (houseLevel <= 4) {
+            threeHouseCurrentSprite.sprite = spriteArrayTreeHouse[houseLevel];
+            houseLevel += 1;
+        }
     }
 }

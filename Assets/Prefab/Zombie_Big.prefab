@@ -112,7 +112,6 @@ MonoBehaviour:
   attackCooldown: 3
   attackDamage: 20
   candyLoot: 50
-  noDestroy: {fileID: 0}
 --- !u!1 &7286592346518544040
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,8 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2752754769279534405}
   - component: {fileID: 3108764119662829260}
-  - component: {fileID: 7604609092377554204}
   - component: {fileID: 1230764045580723813}
+  - component: {fileID: 7604609092377554204}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -197,22 +196,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &7604609092377554204
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7286592346518544040}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 03b5bacaa8422834792425e0a6010df4, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 03b5bacaa8422834792425e0a6010df4, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &1230764045580723813
 Animator:
   serializedVersion: 3
@@ -232,3 +215,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &7604609092377554204
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286592346518544040}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 03b5bacaa8422834792425e0a6010df4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 03b5bacaa8422834792425e0a6010df4, type: 2}
+  - {fileID: 7400000, guid: 0f85b967c40ed2b4ba9f9aff57c95338, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

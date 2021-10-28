@@ -78,7 +78,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.49, y: 14.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -115,6 +115,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 724dbb063c268d345ba72c53ac69b158, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 724dbb063c268d345ba72c53ac69b158, type: 2}
+  - {fileID: 7400000, guid: 8f6a139b8391d6d47a714dbd1724ddf1, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -231,4 +232,3 @@ MonoBehaviour:
   attackCooldown: 0.5
   attackDamage: 1
   candyLoot: 10
-  noDestroy: {fileID: 0}
