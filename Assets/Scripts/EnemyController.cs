@@ -9,6 +9,12 @@ public class EnemyController : MonoBehaviour
     public float attackCooldown;
     public int attackDamage;
     private bool isStopped;
+    public int candyLoot = 10;
+    GameObject noDestroy;
+
+    void Start() {
+        noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
+    }
 
     void FixedUpdate() 
     {
@@ -48,6 +54,7 @@ public class EnemyController : MonoBehaviour
         if (health - damage <= 0)
         {
             transform.parent.GetComponent<SpawnPoint>().zombies.Remove(this.gameObject);
+            noDestroy.GetComponent<CommonVariables>().addCandy(candyLoot);
             Destroy(this.gameObject);
         }
         else 

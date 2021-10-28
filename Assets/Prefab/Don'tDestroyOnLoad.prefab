@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5727743289191028919}
   m_Layer: 0
   m_Name: Don'tDestroyOnLoad
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7df891a9dbe80d479ecd761ef372ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  candyCount: 0
+  candyCountText: {fileID: 0}
+  score: 0
+  scoreText: {fileID: 0}
