@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-    public GameObject noDestroy;
+    GameObject noDestroy;
     public GameObject bombButton;
     public GameObject thunderButton;
     public GameObject iceButton;

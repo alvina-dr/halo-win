@@ -34,9 +34,17 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(Attack(collision));
             isStopped = true;
         }
-        if (collision.gameObject.layer == 9)
+        if (collision.gameObject.layer == 7)
         {
-            StartCoroutine(SufferSpecialAttack(collision));
+            StartCoroutine(SufferIceAttack(collision));
+        }
+        if (collision.gameObject.layer == 8)
+        {
+            StartCoroutine(SufferThunderAttack(collision));
+        }
+                if (collision.gameObject.layer == 9)
+        {
+            StartCoroutine(SufferBombAttack(collision));
         }
     }
 
@@ -58,24 +66,42 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    IEnumerator SufferSpecialAttack(Collider2D collision)
+    IEnumerator SufferBombAttack(Collider2D collision)
     {
         if (collision == GameObject.Find("BombZone").GetComponent<Collider2D>()) {
             ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().bombDamage);
-            yield return new WaitForSeconds(attackCooldown);
+            //devient rouge et animation
+        } else {
+            yield return new WaitForSeconds(0);
         }
+    }
 
+    IEnumerator SufferIceAttack(Collider2D collision) {
         if (collision == GameObject.Find("IceZone").GetComponent<Collider2D>()) {
             ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().iceDamage);
-            yield return new WaitForSeconds(attackCooldown);
+            speed = speed / 2;
+            yield return new WaitForSeconds(5);
+            speed = speed * 2;
+            //devient bleu et animation
+        } else  {
+            yield return new WaitForSeconds(1);
         }
-
-        if (collision == GameObject.Find("ThunderZone").GetComponent<Collider2D>()) {
-            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().thunderDamage);
-            yield return new WaitForSeconds(attackCooldown);
-        }
-
     }
+
+    IEnumerator SufferThunderAttack(Collider2D collision) {
+        if (collision == GameObject.Find("ThunderZone").GetComponent<Collider2D>()) {
+            speed = speed / 10;
+            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().thunderDamage);
+            yield return new WaitForSeconds(1);
+            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().thunderDamage);
+            yield return new WaitForSeconds(1);
+            speed = speed * 10;
+            //et animation 
+        } else {
+            yield return new WaitForSeconds(1);
+        }
+    }
+
 
     public void ReceiveDamage(int damage)
     {
