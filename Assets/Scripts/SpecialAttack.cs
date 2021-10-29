@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class SpecialAttack : MonoBehaviour
 {
@@ -19,36 +21,46 @@ public class SpecialAttack : MonoBehaviour
         
     public void BombAttack() {
         bombZone.SetActive(true);
-        StartCoroutine(BombAttackCoroutine(5000));
+        StartCoroutine(BombAttackCoroutine());
     }
 
     public void IceAttack() {
         iceZone.SetActive(true);
-        StartCoroutine(IceAttackCoroutine(5000));
+        StartCoroutine(IceAttackCoroutine());
     }
 
     public void ThunderAttack() {
         thunderZone.SetActive(true);
-        StartCoroutine(ThunderAttackCoroutine(5000));
+        StartCoroutine(ThunderAttackCoroutine());
     }
 
-    IEnumerator BombAttackCoroutine(int timeToWait) {
+    IEnumerator BombAttackCoroutine() {
+        bombButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3); //temps de l'attaque
-        Debug.Log("j'attend cinq secondes");
         bombZone.SetActive(false);
+        yield return new WaitForSeconds(30); // temps de rechargement de l'attaque
+        bombButton.GetComponent<Button>().interactable = false;
+
+
 
     }
 
-    IEnumerator IceAttackCoroutine(int timeToWait) {
+    IEnumerator IceAttackCoroutine() {
+        iceButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3); //temps de l'attaque
-        Debug.Log("j'attend cinq secondes");
         iceZone.SetActive(false);
+        yield return new WaitForSeconds(70); // temps de rechargement de l'attaque
+        iceButton.GetComponent<Button>().interactable = false;
+
 
     }
-    IEnumerator ThunderAttackCoroutine(int timeToWait) {
+    IEnumerator ThunderAttackCoroutine() {
+        thunderButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3); // temps de l'attaque
-        Debug.Log("j'attend cinq secondes");
         thunderZone.SetActive(false);
+        yield return new WaitForSeconds(100); // temps de rechargement de l'attaque
+        thunderButton.GetComponent<Button>().interactable = false;
+
 
     }
 
