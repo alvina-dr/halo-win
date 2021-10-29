@@ -20,6 +20,7 @@ public class Shop : MonoBehaviour
     {
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
     }
+    
 
     void Update()
     {

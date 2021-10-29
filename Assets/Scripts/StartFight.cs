@@ -19,7 +19,6 @@ public class StartFight : MonoBehaviour
         cameraObject.transform.position = new Vector3(-165, -20, -390);
         cameraObject.orthographicSize = 220f;
     }
-
     void Update() 
     {
         if (fight) {
@@ -31,18 +30,21 @@ public class StartFight : MonoBehaviour
                 fight = false;
             }
         } 
+        else if (fight!){
+            cameraObject.orthographicSize = 220f;
+            cameraObject.transform.position = new Vector3(-165, -20, -390);
+
+        }
 
     }
 
     public void StartFightFunction()
     {
+        spawner = GameObject.FindGameObjectWithTag("Spawner");
+        spawner.GetComponent<ZombiesSpawner>().enabled = true;
         fight = true;
         phase1UI.SetActive(false);
         phase2UI.SetActive(true);
         spawner.SetActive(true);
-
-
-
-
     }
 }

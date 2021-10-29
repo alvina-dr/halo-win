@@ -7,10 +7,13 @@ public class MainMenu : MonoBehaviour
 {
     // public Animator transition;
     // public float transitionTime = 1f;
-
+    public GameObject noDestroy;
 
     public void PlayGame (){
+        noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
+        Destroy(noDestroy);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
     // IEnumerator LoadScene(int levelIndex){
