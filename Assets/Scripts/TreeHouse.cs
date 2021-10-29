@@ -17,7 +17,7 @@ public class TreeHouse : MonoBehaviour
     public Sprite[] spriteArrayTreeHouse;
     public int houseLevel = 1;
     public int[] treehouseLevelCost;
-    int levelUpCost = 20;
+    int levelUpCost = 500;
     public GameObject levelUpButton;
 
     //FIX TREEHOUSE
@@ -73,7 +73,7 @@ public class TreeHouse : MonoBehaviour
                 treeHouseCurrentSprite.sprite = spriteArrayTreeHouse[houseLevel];
                 levelUpCost = treehouseLevelCost[houseLevel-1];
                 houseLevel += 1;
-                maxHealth += houseLevel * 100;
+                maxHealth += houseLevel + 400;
                 currentHealth = maxHealth;
                 healthBar.SetMaxHealth(maxHealth);
 
@@ -92,7 +92,7 @@ public class TreeHouse : MonoBehaviour
 
     public void FixTreeHouse() {
         damageDealtTreeHouse = maxHealth - currentHealth;
-        fixTreeHouseCost = damageDealtTreeHouse * 2;
+        fixTreeHouseCost = damageDealtTreeHouse;
         if (noDestroy.GetComponent<CommonVariables>().candyCount >= fixTreeHouseCost) {
             currentHealth = maxHealth;
             noDestroy.GetComponent<CommonVariables>().subCandy(fixTreeHouseCost);
