@@ -5595,7 +5595,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1ddfbe6075739774bb4d13f0ad4710e9, type: 3}
   - {fileID: 21300000, guid: 97a53100cc0ca4e4ca0bb07bec8fa1da, type: 3}
   houseLevel: 1
-  treehouseLevelCost: 64000000e803000088130000
+  treehouseLevelCost: f4010000e80300008813000010270000
   levelUpButton: {fileID: 345908018}
   levelUpCostText: {fileID: 964054611}
   fixButton: {fileID: 1149713255}

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Narration.unity
     guid: 5245710ee53bd494dadba7a3ac3de38e
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level 2.unity

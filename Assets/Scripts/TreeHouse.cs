@@ -17,7 +17,7 @@ public class TreeHouse : MonoBehaviour
     public Sprite[] spriteArrayTreeHouse;
     public int houseLevel = 1;
     public int[] treehouseLevelCost;
-    int levelUpCost = 500;
+    int levelUpCost;
     public GameObject levelUpButton;
     public Text levelUpCostText;
 
@@ -41,6 +41,8 @@ public class TreeHouse : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         treeHouseCurrentSprite = this.gameObject.GetComponentInChildren<SpriteRenderer>();
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
+        levelUpCost = treehouseLevelCost[0];
+
 
     }
 
@@ -87,7 +89,7 @@ public class TreeHouse : MonoBehaviour
                 if (houseLevel == 4) {
                     levelUpCost = treehouseLevelCost[0];    
                 } else {
-                    levelUpCost = treehouseLevelCost[houseLevel-1];
+                    levelUpCost = treehouseLevelCost[houseLevel];
                 }
                 houseLevel += 1;
                 if (currentHealth == maxHealth) {
