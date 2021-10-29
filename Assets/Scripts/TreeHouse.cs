@@ -17,7 +17,7 @@ public class TreeHouse : MonoBehaviour
     public Sprite[] spriteArrayTreeHouse;
     public int houseLevel = 1;
     public int[] treehouseLevelCost;
-    int levelUpCost = 20;
+    int levelUpCost = 500;
     public GameObject levelUpButton;
     public Text levelUpCostText;
 
