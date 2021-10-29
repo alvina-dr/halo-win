@@ -7201,7 +7201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &717661047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7869,7 +7869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &843571103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8352,7 +8352,7 @@ PrefabInstance:
       objectReference: {fileID: 523094358}
     - target: {fileID: 5727743289191028919, guid: cd5b6d27c3a5c32439332b6d6b677af0, type: 3}
       propertyPath: candyCount
-      value: 5000
+      value: 20000
       objectReference: {fileID: 0}
     - target: {fileID: 5727743289191028919, guid: cd5b6d27c3a5c32439332b6d6b677af0, type: 3}
       propertyPath: candyCountText
@@ -10083,7 +10083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1044047727
 MonoBehaviour:
   m_ObjectHideFlags: 0
