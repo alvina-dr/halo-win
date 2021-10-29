@@ -34,6 +34,10 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(Attack(collision));
             isStopped = true;
         }
+        if (collision.gameObject.layer == 9)
+        {
+            StartCoroutine(SufferSpecialAttack(collision));
+        }
     }
 
     IEnumerator Attack(Collider2D collision)
@@ -51,6 +55,24 @@ public class EnemyController : MonoBehaviour
             this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", true);
             yield return new WaitForSeconds(attackCooldown);
             StartCoroutine(Attack(collision));            
+        }
+    }
+
+    IEnumerator SufferSpecialAttack(Collider2D collision)
+    {
+        if (collision == GameObject.Find("BombZone").GetComponent<Collider2D>()) {
+            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().bombDamage);
+            yield return new WaitForSeconds(attackCooldown);
+        }
+
+        if (collision == GameObject.Find("IceZone").GetComponent<Collider2D>()) {
+            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().iceDamage);
+            yield return new WaitForSeconds(attackCooldown);
+        }
+
+        if (collision == GameObject.Find("ThunderZone").GetComponent<Collider2D>()) {
+            ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().thunderDamage);
+            yield return new WaitForSeconds(attackCooldown);
         }
 
     }
