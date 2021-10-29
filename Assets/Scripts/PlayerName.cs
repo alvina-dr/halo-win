@@ -11,11 +11,12 @@ public class PlayerName : MonoBehaviour
 
     void Start()
     {
-        //Fetch the PlayerPref settings
-        // SetPlayerNameTitle();
+       
+        PlayerTitle.text = PlayerPrefs.GetString("_nameImput");
+    
     }
 
-    void SetPlayerNameTitle()
+    public void SetPlayerNameTitle()
     {
         //Fetch name (string) from the PlayerPrefs (set these Playerprefs in another script). If no string exists, the default is "No Name"
         Name = PlayerNameText.text;
@@ -23,8 +24,5 @@ public class PlayerName : MonoBehaviour
         
     }
 
-    void GetPlayerNameTitle()
-    {
-        PlayerTitle.text = PlayerPrefs.GetString("_nameImput");
-    }
+    
 }

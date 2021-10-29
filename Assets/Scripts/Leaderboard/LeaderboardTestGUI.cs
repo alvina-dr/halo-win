@@ -36,6 +36,23 @@ public class LeaderboardTestGUI : MonoBehaviour {
 
     public TMP_Text TenName;
     public TMP_Text TenScore;
+
+    
+ 
+        private void Start() {
+            
+            _nameInput = PlayerPrefs.GetString("_nameImput");
+            _scoreInput = PlayerPrefs.GetString("_scoreImput");
+
+            int score;
+            int.TryParse(_scoreInput, out score);
+ 
+            Leaderboard.Record(_nameInput, score);
+ 
+            // Reset for next input.
+            _nameInput = "";
+            _scoreInput = "0";
+        }
  
     private void OnGUI() {
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
@@ -102,19 +119,7 @@ public class LeaderboardTestGUI : MonoBehaviour {
 
         
  
-        _nameInput = PlayerPrefs.GetString("_nameImput");
-        _scoreInput = GUILayout.TextField(_scoreInput);
- 
-        if (gameObject.activeSelf) {
-            int score;
-            int.TryParse(_scoreInput, out score);
- 
-            Leaderboard.Record(_nameInput, score);
- 
-            // Reset for next input.
-            _nameInput = "";
-            _scoreInput = "0";
-        }
+        
 
         // if (GUILayout.Button("Clear")) {
         //     Leaderboard.Clear();
