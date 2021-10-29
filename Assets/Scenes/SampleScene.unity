@@ -1390,6 +1390,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 387781081}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyBomb
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &207770506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,7 +3462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3000
+  m_text: 10000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
@@ -3964,7 +3976,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_PressedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_SelectedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4176,6 +4188,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 449126cb5d4d18d4381c3f5642efb152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noDestroy: {fileID: 0}
+  bombButton: {fileID: 366506195}
+  thunderButton: {fileID: 892092948}
+  iceButton: {fileID: 2023070674}
+  bombActivated: 0
+  thunderActivated: 0
+  iceActivated: 0
+  candyCount: 0
 --- !u!114 &387781082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6334,7 +6354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: 1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
@@ -8497,7 +8517,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_PressedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_SelectedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -12046,6 +12066,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 387781081}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyThunder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389669734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12202,6 +12234,18 @@ MonoBehaviour:
       - m_Target: {fileID: 30672172}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 387781081}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyIce
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16424,7 +16468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1500
+  m_text: 3000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
@@ -16713,7 +16757,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_PressedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
     m_SelectedColor: {r: 1, g: 0.68235296, b: 0.41960785, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
