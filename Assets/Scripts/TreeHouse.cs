@@ -41,6 +41,11 @@ public class TreeHouse : MonoBehaviour
         } else {
             fixButton.GetComponent<Button>().interactable = false;
         }
+        if (noDestroy.GetComponent<CommonVariables>().candyCount < levelUpCost) {
+            levelUpButton.GetComponent<Button>().interactable = false;
+        } else {
+            levelUpButton.GetComponent<Button>().interactable = true;
+        }
     }
 
     public void ReceiveDamage(int damage)
