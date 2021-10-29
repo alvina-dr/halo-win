@@ -27,6 +27,8 @@ public class TreeHouse : MonoBehaviour
 
     //GAME OVER
     public GameObject gameOverMenu;
+    public GameObject thiago;
+    public GameObject uiInGame;
 
     GameObject noDestroy;
  
@@ -60,6 +62,8 @@ public class TreeHouse : MonoBehaviour
         {
             currentHealth = 0;
             gameOverMenu.SetActive(true);
+            thiago.SetActive(false);
+            uiInGame.SetActive(false);
             Destroy(this.gameObject);                    
         }
          
@@ -73,10 +77,16 @@ public class TreeHouse : MonoBehaviour
                 treeHouseCurrentSprite.sprite = spriteArrayTreeHouse[houseLevel];
                 levelUpCost = treehouseLevelCost[houseLevel-1];
                 houseLevel += 1;
-                maxHealth += houseLevel * 100;
-                currentHealth = maxHealth;
-                healthBar.SetMaxHealth(maxHealth);
-
+                if (currentHealth == maxHealth) {
+                    maxHealth += houseLevel * 100;
+                    currentHealth = maxHealth;
+                    healthBar.SetMaxHealth(maxHealth);
+                    healthBar.SetHealth(currentHealth);
+                } else {
+                    maxHealth += houseLevel * 100;
+                    healthBar.SetMaxHealth(maxHealth);
+                    healthBar.SetHealth(currentHealth);
+                }
 
             } else {
                 //le joueur doit savoir qu'il n'a pas assez de bonbons
@@ -92,7 +102,7 @@ public class TreeHouse : MonoBehaviour
 
     public void FixTreeHouse() {
         damageDealtTreeHouse = maxHealth - currentHealth;
-        fixTreeHouseCost = damageDealtTreeHouse * 2;
+        fixTreeHouseCost = damageDealtTreeHouse;
         if (noDestroy.GetComponent<CommonVariables>().candyCount >= fixTreeHouseCost) {
             currentHealth = maxHealth;
             noDestroy.GetComponent<CommonVariables>().subCandy(fixTreeHouseCost);

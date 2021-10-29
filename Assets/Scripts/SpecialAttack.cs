@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class SpecialAttack : MonoBehaviour
 {
+    public GameObject shop;
+
     public GameObject bombZone; 
     public int bombDamage;
     public GameObject bombButton;
@@ -23,6 +25,22 @@ public class SpecialAttack : MonoBehaviour
         iceZone.SetActive(false);
         thunderZone.SetActive(false);
 
+        bombButton.SetActive(false);
+        iceButton.SetActive(false);
+        thunderButton.SetActive(false);
+
+    }
+
+    void Update() {
+        if (shop.GetComponent<Shop>().bombActivated) {
+            bombButton.SetActive(true);
+        }
+        if (shop.GetComponent<Shop>().iceActivated) {
+            iceButton.SetActive(true);
+        }
+        if (shop.GetComponent<Shop>().thunderActivated) {
+            thunderButton.SetActive(true);
+        }
     }
 
         
