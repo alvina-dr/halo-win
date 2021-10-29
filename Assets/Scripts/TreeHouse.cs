@@ -19,6 +19,8 @@ public class TreeHouse : MonoBehaviour
     public int[] treehouseLevelCost;
     int levelUpCost = 20;
     public GameObject levelUpButton;
+    public Text levelUpCostText;
+
 
     //FIX TREEHOUSE
     int damageDealtTreeHouse;
@@ -31,6 +33,7 @@ public class TreeHouse : MonoBehaviour
     public GameObject uiInGame;
 
     GameObject noDestroy;
+
  
     void Start()
     {
@@ -47,10 +50,16 @@ public class TreeHouse : MonoBehaviour
         } else {
             fixButton.GetComponent<Button>().interactable = false;
         }
-        if (noDestroy.GetComponent<CommonVariables>().candyCount < levelUpCost) {
+        if (houseLevel == 5) {
             levelUpButton.GetComponent<Button>().interactable = false;
+            levelUpCostText.text = "";         
         } else {
-            levelUpButton.GetComponent<Button>().interactable = true;
+            levelUpCostText.text = "" + levelUpCost; 
+            if (noDestroy.GetComponent<CommonVariables>().candyCount < levelUpCost) {
+                levelUpButton.GetComponent<Button>().interactable = false;
+            } else {
+                levelUpButton.GetComponent<Button>().interactable = true;
+            }
         }
     }
 
@@ -75,7 +84,11 @@ public class TreeHouse : MonoBehaviour
             if (noDestroy.GetComponent<CommonVariables>().candyCount >= levelUpCost) {
                 noDestroy.GetComponent<CommonVariables>().subCandy(levelUpCost);
                 treeHouseCurrentSprite.sprite = spriteArrayTreeHouse[houseLevel];
-                levelUpCost = treehouseLevelCost[houseLevel-1];
+                if (houseLevel == 4) {
+                    levelUpCost = treehouseLevelCost[0];    
+                } else {
+                    levelUpCost = treehouseLevelCost[houseLevel-1];
+                }
                 houseLevel += 1;
                 if (currentHealth == maxHealth) {
                     maxHealth += houseLevel * 100;
@@ -88,15 +101,9 @@ public class TreeHouse : MonoBehaviour
                     healthBar.SetHealth(currentHealth);
                 }
 
-            } else {
-                //le joueur doit savoir qu'il n'a pas assez de bonbons
             }
         }
-        if (houseLevel == 5){
-            levelUpButton.GetComponent<Button>().interactable = false;
-            levelUpCost = treehouseLevelCost[0];
-            //activation de la mention max
-        }
+
 
     }
 
