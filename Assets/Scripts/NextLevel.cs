@@ -10,6 +10,6 @@ public class NextLevel : MonoBehaviour
     public string nextLevel;
 
     public void goToNextLevel() {
-        SceneManager.LoadScene(nextLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

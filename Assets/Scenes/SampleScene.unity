@@ -286,7 +286,7 @@ RectTransform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1854133128}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1191,7 +1191,7 @@ Transform:
   m_LocalScale: {x: 100, y: 500, z: 1}
   m_Children: []
   m_Father: {fileID: 523094363}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &205738231
 SpriteRenderer:
@@ -1264,6 +1264,7 @@ MonoBehaviour:
   treehouseLevelCost: 
   levelUpButton: {fileID: 0}
   fixButton: {fileID: 0}
+  gameOverMenu: {fileID: 0}
 --- !u!1 &207770502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,7 +1916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246925572
 GameObject:
@@ -5272,7 +5273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1854133128}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &520078344
 GameObject:
@@ -5451,6 +5452,7 @@ MonoBehaviour:
   treehouseLevelCost: 64000000e803000088130000
   levelUpButton: {fileID: 345908018}
   fixButton: {fileID: 1149713255}
+  gameOverMenu: {fileID: 314034630}
 --- !u!222 &523094360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5497,12 +5499,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 87816954}
-  - {fileID: 843571105}
-  - {fileID: 1044047729}
-  - {fileID: 717661049}
   - {fileID: 205738230}
   m_Father: {fileID: 1854133128}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6915,10 +6914,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717661046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 160, y: -100, z: 0}
+  m_LocalPosition: {x: -200, y: -219.30023, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
-  m_Father: {fileID: 523094363}
+  m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &725110535
@@ -7583,10 +7582,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843571102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270, y: 130, z: 0}
+  m_LocalPosition: {x: -90, y: 10.699776, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
-  m_Father: {fileID: 523094363}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846187261
@@ -7988,7 +7987,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &864361394
 MonoBehaviour:
@@ -8058,7 +8057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5727743289191028918, guid: cd5b6d27c3a5c32439332b6d6b677af0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5727743289191028918, guid: cd5b6d27c3a5c32439332b6d6b677af0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9678,10 +9677,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044047726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 230, y: 35, z: 0}
+  m_LocalPosition: {x: -130, y: -84.300224, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
-  m_Father: {fileID: 523094363}
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049969523
@@ -10857,12 +10856,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172741406}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 230.56822, y: 43.437763, z: -60.309334}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 359.31427, y: 32.737988, z: 115.26133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1854133128}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223648782
 GameObject:
@@ -11667,7 +11666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1365006332
 Transform:
   m_ObjectHideFlags: 0
@@ -11683,7 +11682,7 @@ Transform:
   - {fileID: 7381700997632068264}
   - {fileID: 1351008774158445436}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1365006333
 MonoBehaviour:
@@ -11692,7 +11691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365006331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98ed09ee5ad388747927006f1c47188a, type: 3}
   m_Name: 
@@ -11703,101 +11702,6 @@ MonoBehaviour:
   - {fileID: 260324798989632213, guid: 602406a64869f3642a333c85e2d74be8, type: 3}
   zombies:
   - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 5
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 4
-    zombieType: 2
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 7
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 7
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 4
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 5
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 1
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 2
-    zombieType: 2
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 6
-    zombieType: 2
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 8
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 9
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 8
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 2
-    zombieType: 2
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 9
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 8
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 10
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 9
-    zombieType: 1
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 10
     zombieType: 0
     Spawner: 0
     RandomSpawn: 1
@@ -12706,7 +12610,7 @@ RectTransform:
   m_Children:
   - {fileID: 1630698982}
   m_Father: {fileID: 1854133128}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12933,7 +12837,7 @@ Transform:
   - {fileID: 578019030}
   - {fileID: 1105160013}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508161820
 GameObject:
@@ -16693,7 +16597,7 @@ Transform:
   - {fileID: 1366374123}
   - {fileID: 1522091015}
   m_Father: {fileID: 1854133128}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023070674
 GameObject:

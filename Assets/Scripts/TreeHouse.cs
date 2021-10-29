@@ -25,6 +25,9 @@ public class TreeHouse : MonoBehaviour
     public GameObject fixButton;
     int fixTreeHouseCost = 0;
 
+    //GAME OVER
+    public GameObject gameOverMenu;
+
     GameObject noDestroy;
  
     void Start()
@@ -33,6 +36,7 @@ public class TreeHouse : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         treeHouseCurrentSprite = this.gameObject.GetComponentInChildren<SpriteRenderer>();
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
+
     }
 
     void Update() {
@@ -55,6 +59,7 @@ public class TreeHouse : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            gameOverMenu.SetActive(true);
             Destroy(this.gameObject);                    
         }
          
