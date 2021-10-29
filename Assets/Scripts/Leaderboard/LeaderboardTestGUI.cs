@@ -102,7 +102,7 @@ public class LeaderboardTestGUI : MonoBehaviour {
 
         
  
-        _nameInput = PlayerPrefs.GetString("nameKey", "Unnamed");
+        _nameInput = PlayerPrefs.GetString("_nameImput");
         _scoreInput = GUILayout.TextField(_scoreInput);
  
         if (gameObject.activeSelf) {

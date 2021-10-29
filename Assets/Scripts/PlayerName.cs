@@ -5,17 +5,26 @@ using TMPro;
 public class PlayerName : MonoBehaviour
 {
 
-    public TMP_Text PlayerNameText;
+    public TMP_InputField PlayerNameText;
+    private string Name;
+    public TMP_Text PlayerTitle;
 
     void Start()
     {
         //Fetch the PlayerPref settings
-        SetPlayerNameTitle();
+        // SetPlayerNameTitle();
     }
 
     void SetPlayerNameTitle()
     {
         //Fetch name (string) from the PlayerPrefs (set these Playerprefs in another script). If no string exists, the default is "No Name"
-        PlayerNameText.text = PlayerPrefs.GetString("Name", "Thiago");
+        Name = PlayerNameText.text;
+        PlayerPrefs.SetString("_nameImput", Name);
+        
+    }
+
+    void GetPlayerNameTitle()
+    {
+        PlayerTitle.text = PlayerPrefs.GetString("_nameImput");
     }
 }
