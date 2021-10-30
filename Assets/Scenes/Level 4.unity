@@ -480,52 +480,52 @@ MonoBehaviour:
   - spawnTime: 1
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 2
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 3
     zombieType: 1
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 4
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 5
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 6
     zombieType: 1
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 7
     zombieType: 1
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 8
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 9
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 10
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 4
     zombieType: 1
@@ -535,12 +535,12 @@ MonoBehaviour:
   - spawnTime: 5
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 6
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 7
     zombieType: 1
@@ -555,77 +555,77 @@ MonoBehaviour:
   - spawnTime: 2
     zombieType: 2
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 6
     zombieType: 2
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 10
     zombieType: 2
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 14
     zombieType: 2
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 16
     zombieType: 2
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 8
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 10
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 10
     zombieType: 1
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 11
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 11
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 12
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 12
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 12
     zombieType: 1
     Spawner: 2
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 14
     zombieType: 1
     Spawner: 1
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 15
     zombieType: 1
     Spawner: 0
-    RandomSpawn: 1
+    RandomSpawn: 0
     isSpawned: 0
   numberZombieDead: -10
   numberAllZombie: 0
