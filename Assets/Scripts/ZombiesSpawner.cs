@@ -9,6 +9,7 @@ public class ZombiesSpawner : MonoBehaviour
     public int numberZombieDead = -10;
     public int numberAllZombie;
     public float time;
+    public bool lastLevel;
 
     void Start() {
         numberAllZombie = zombies.Count;

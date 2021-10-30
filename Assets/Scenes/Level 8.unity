@@ -689,6 +689,7 @@ MonoBehaviour:
   numberZombieDead: -10
   numberAllZombie: 0
   time: 0
+  lastLevel: 1
 --- !u!4 &1055029617
 Transform:
   m_ObjectHideFlags: 0

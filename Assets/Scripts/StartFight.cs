@@ -11,6 +11,7 @@ public class StartFight : MonoBehaviour
     public GameObject phase2UI;
     public GameObject spawner;
     public GameObject winUI;
+    public GameObject winLastLevelUI;
 
     public bool fight = false;
     
@@ -26,8 +27,14 @@ public class StartFight : MonoBehaviour
             cameraObject.transform.position = Vector3.MoveTowards(cameraObject.transform.position, new Vector3(-20, 0, -510), 0.7f);
             if (spawner.GetComponent<ZombiesSpawner>().numberZombieDead == spawner.GetComponent<ZombiesSpawner>().numberAllZombie)
             {
-                winUI.SetActive(true);
-                fight = false;
+                if (spawner.GetComponent<ZombiesSpawner>().lastLevel) {
+                    winLastLevelUI.SetActive(true);
+                    fight = false;
+                } else {
+                    winUI.SetActive(true);
+                    fight = false;
+                }
+
             }
         } 
         else if (fight!){
