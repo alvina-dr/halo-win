@@ -11,6 +11,7 @@ public class TreeHouse : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
+    public Text healthText;
 
     //LEVEL UP TREEHOUSE
     SpriteRenderer treeHouseCurrentSprite;
@@ -66,6 +67,8 @@ public class TreeHouse : MonoBehaviour
                 levelUpButton.GetComponent<Button>().interactable = true;
             }
         }
+    healthText.text = currentHealth + "/" + maxHealth;
+
     }
 
     public void ReceiveDamage(int damage)
