@@ -918,6 +918,7 @@ MonoBehaviour:
     isSpawned: 0
   numberZombieDead: -10
   numberAllZombie: 0
+  time: 0
 --- !u!4 &778406227
 Transform:
   m_ObjectHideFlags: 0
@@ -1146,12 +1147,12 @@ SpriteRenderer:
   m_SortingLayerID: -102600851
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 344c66b7d81cf484dbd531e39f1c9e17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8fed1ff1a2a5bd44b52eace19b5b613, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1920, y: 1080}
+  m_Size: {x: 1129.4117, y: 635.2941}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
