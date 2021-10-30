@@ -26,6 +26,7 @@ public class TreeHouse : MonoBehaviour
     int damageDealtTreeHouse;
     public GameObject fixButton;
     int fixTreeHouseCost = 0;
+    public Text fixTreeHouseCostText;
 
     //GAME OVER
     public GameObject gameOverMenu;
@@ -42,15 +43,17 @@ public class TreeHouse : MonoBehaviour
         treeHouseCurrentSprite = this.gameObject.GetComponentInChildren<SpriteRenderer>();
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
         levelUpCost = treehouseLevelCost[0];
-
-
     }
 
     void Update() {
         if (currentHealth < maxHealth) {
             fixButton.GetComponent<Button>().interactable = true;
+            damageDealtTreeHouse = maxHealth - currentHealth;
+            fixTreeHouseCostText.text = "" + damageDealtTreeHouse;
         } else {
             fixButton.GetComponent<Button>().interactable = false;
+            fixTreeHouseCostText.text = "";
+
         }
         if (houseLevel == 5) {
             levelUpButton.GetComponent<Button>().interactable = false;
