@@ -311,380 +311,380 @@ MonoBehaviour:
   - {fileID: 7436322199553914230, guid: 1f91084ab99c17d43857607ab0eac333, type: 3}
   - {fileID: 260324798989632213, guid: 602406a64869f3642a333c85e2d74be8, type: 3}
   zombies:
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 0
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 0
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 1
+    isSpawned: 0
+  - spawnTime: 0
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 1
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 1
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 1
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 2
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 2
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 2
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 3
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 3
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 3
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 4
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 4
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 4
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
+    isSpawned: 0
+  - spawnTime: 5
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
-    isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 5
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 5
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 6
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 6
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 6
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 7
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 7
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 7
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 8
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 8
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 8
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 9
+    zombieType: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 9
+    zombieType: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 9
+    zombieType: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 7
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 7
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 7
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 8
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 8
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 8
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 9
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 9
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 9
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 10
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 10
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 10
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 11
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 11
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 11
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 12
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 12
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 12
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 13
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 13
     zombieType: 0
-    Spawner: 0
+    Spawner: 2
     RandomSpawn: 1
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 13
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 14
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 14
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 14
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 15
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 15
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
+  - spawnTime: 15
     zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 12
+    zombieType: 2
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 12
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 12
+    zombieType: 2
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 3
     zombieType: 0
     Spawner: 0
     RandomSpawn: 1
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 13
+    zombieType: 2
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 13
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 13
+    zombieType: 2
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 14
+    zombieType: 2
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 14
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 14
+    zombieType: 2
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 15
+    zombieType: 2
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 15
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 15
+    zombieType: 2
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
   - spawnTime: 3
     zombieType: 0
     Spawner: 0
     RandomSpawn: 1
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 16
+    zombieType: 2
+    Spawner: 1
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 16
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 16
+    zombieType: 2
+    Spawner: 3
+    RandomSpawn: 0
     isSpawned: 0
-  - spawnTime: 3
-    zombieType: 0
-    Spawner: 0
-    RandomSpawn: 1
+  - spawnTime: 17
+    zombieType: 2
+    Spawner: 2
+    RandomSpawn: 0
     isSpawned: 0
   numberZombieDead: -10
   numberAllZombie: 0
