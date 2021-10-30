@@ -3142,6 +3142,7 @@ GameObject:
   - component: {fileID: 340536662}
   - component: {fileID: 340536664}
   - component: {fileID: 340536663}
+  - component: {fileID: 340536665}
   m_Layer: 5
   m_Name: DefeatMenu
   m_TagString: Untagged
@@ -3211,6 +3212,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340536661}
   m_CullTransparentMesh: 1
+--- !u!114 &340536665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340536661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7df891a9dbe80d479ecd761ef372ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candyCount: 0
+  candyCountText: {fileID: 0}
+  treeHouse: {fileID: 0}
+  score: 0
 --- !u!1 &342652131
 GameObject:
   m_ObjectHideFlags: 0
@@ -14392,6 +14409,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1552543208}
         m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
         m_MethodName: goToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340536665}
+        m_TargetAssemblyTypeName: CommonVariables, Assembly-CSharp
+        m_MethodName: SetScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
