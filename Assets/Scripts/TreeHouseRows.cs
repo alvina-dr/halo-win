@@ -19,7 +19,7 @@ public class TreeHouseRows : MonoBehaviour
         
         if (zombies.Count > 0)
         {
-            float distance = 999;
+            float distance = 700;
             foreach (GameObject zombie in zombies)
             {
                 float zombieDistance = Vector3.Distance(transform.position, zombie.transform.position);

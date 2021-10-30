@@ -118,6 +118,8 @@ public class TreeHouse : MonoBehaviour
         if (noDestroy.GetComponent<CommonVariables>().candyCount >= fixTreeHouseCost) {
             currentHealth = maxHealth;
             noDestroy.GetComponent<CommonVariables>().subCandy(fixTreeHouseCost);
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(currentHealth);
         }
     }
 }
