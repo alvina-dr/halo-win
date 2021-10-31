@@ -156,7 +156,7 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 3
+  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1793680521}
   zombies: []
@@ -233,7 +233,7 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 3
+  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1288461513}
   zombies: []
@@ -720,7 +720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022743053821280142, guid: 2988df6b576b4df42a88caeebe78200c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 664.5
+      value: 775
       objectReference: {fileID: 0}
     - target: {fileID: 2022743053821280142, guid: 2988df6b576b4df42a88caeebe78200c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -883,7 +883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6501564590599097231, guid: c01785217a515524d96382c84b7d60f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 664.5
+      value: 775
       objectReference: {fileID: 0}
     - target: {fileID: 6501564590599097231, guid: c01785217a515524d96382c84b7d60f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -964,7 +964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3599699892668908398, guid: bb3a2f50349410545b0cb5d4b299d433, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 664.5
+      value: 775
       objectReference: {fileID: 0}
     - target: {fileID: 3599699892668908398, guid: bb3a2f50349410545b0cb5d4b299d433, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 3
+  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1079039474}
   zombies: []

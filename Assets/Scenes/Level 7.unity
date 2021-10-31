@@ -865,6 +865,7 @@ MonoBehaviour:
   numberZombieDead: -10
   numberAllZombie: 0
   time: 0
+  lastLevel: 0
 --- !u!1001 &1229550993
 PrefabInstance:
   m_ObjectHideFlags: 0

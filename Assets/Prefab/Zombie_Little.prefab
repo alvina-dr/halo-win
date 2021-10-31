@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b25f01fad6ec24e8ad4949c66fc99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 1
-  attackCooldown: 0.5
+  health: 12
+  speed: 1.2
+  attackCooldown: 0.3
   attackDamage: 1
-  candyLoot: 10
+  candyLoot: 20

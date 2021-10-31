@@ -108,10 +108,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 60
-  speed: 0.2
+  speed: 0.33
   attackCooldown: 3
   attackDamage: 20
-  candyLoot: 50
+  candyLoot: 60
 --- !u!1 &7286592346518544040
 GameObject:
   m_ObjectHideFlags: 0
