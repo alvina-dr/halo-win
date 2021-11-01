@@ -36,6 +36,8 @@ public class TreeHouse : MonoBehaviour
 
     GameObject noDestroy;
 
+    public int treeHouseDamageValue;
+
  
     void Start()
     {
@@ -48,9 +50,14 @@ public class TreeHouse : MonoBehaviour
 
     void Update() {
         if (currentHealth < maxHealth) {
-            fixButton.GetComponent<Button>().interactable = true;
             damageDealtTreeHouse = maxHealth - currentHealth;
             fixTreeHouseCostText.text = "" + damageDealtTreeHouse;
+            if (noDestroy.GetComponent<CommonVariables>().candyCount >= damageDealtTreeHouse) {
+                fixButton.GetComponent<Button>().interactable = true;
+            } else {
+                fixButton.GetComponent<Button>().interactable = false;
+            }
+
         } else {
             fixButton.GetComponent<Button>().interactable = false;
             fixTreeHouseCostText.text = "";

@@ -11,11 +11,13 @@ public class EnemyController : MonoBehaviour
     private bool isStopped;
     public int candyLoot = 10;
     GameObject noDestroy;
+    SpriteRenderer enemySprite;
 
 
     void Start() {
         noDestroy = GameObject.FindGameObjectWithTag("NoDestroy");
         //numberAllZombie = GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().zombies.Count;
+        enemySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     void FixedUpdate() 
@@ -69,9 +71,10 @@ public class EnemyController : MonoBehaviour
     IEnumerator SufferBombAttack(Collider2D collision)
     {
         if (collision == GameObject.Find("BombZone").GetComponent<Collider2D>()) {
+            //enemySprite.color = new Color (1, 0, 0, 1); 
             ReceiveDamage(GameObject.Find("Powers").GetComponent<SpecialAttack>().bombDamage);
-            //devient rouge et animation
         } else {
+            //enemySprite.color = new Color (1, 1, 1, 1); 
             yield return new WaitForSeconds(0);
         }
     }
@@ -110,7 +113,6 @@ public class EnemyController : MonoBehaviour
             transform.parent.GetComponent<SpawnPoint>().zombies.Remove(this.gameObject);
             noDestroy.GetComponent<CommonVariables>().addCandy(candyLoot);
             GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().numberZombieDead += 1;
-            //Debug.Log(GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().numberZombieDead);
             Destroy(this.gameObject);
         }
         else 

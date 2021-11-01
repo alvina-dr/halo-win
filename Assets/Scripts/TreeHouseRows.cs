@@ -7,14 +7,16 @@ public class TreeHouseRows : MonoBehaviour
     public GameObject bullet;
     public GameObject toAttack;
     public float attackCooldown;
-    public int DamageValue;
+    public int damageValue;
     private float attackTime;
     public GameManager gameManager;
     public SpawnPoint spawnPoint;
     public List<GameObject> zombies;
 
-    private void Update()
+    private void FixedUpdate()
     {
+        damageValue = GameObject.FindGameObjectWithTag("Treehouse").GetComponent<TreeHouse>().treeHouseDamageValue;
+
         zombies = spawnPoint.getZombies();
         
         if (zombies.Count > 0)
@@ -41,7 +43,7 @@ public class TreeHouseRows : MonoBehaviour
             {
                 GameObject bulletInstance = Instantiate(bullet);
                 bulletInstance.transform.position = this.transform.position;
-                bulletInstance.GetComponent<Bullets>().DamageValue = DamageValue;
+                bulletInstance.GetComponent<Bullets>().DamageValue = damageValue;
                 attackTime = Time.time + attackCooldown;
             }
         }

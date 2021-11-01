@@ -13,7 +13,14 @@ public class Shop : MonoBehaviour
     public bool bombActivated;
     public bool thunderActivated;
     public bool iceActivated;
+
+    public int bombPrice;
+    public int thunderPrice;
+    public int icePrice;
+
+
     public int candyCount;
+    
 
 
     void Start() 
@@ -25,58 +32,52 @@ public class Shop : MonoBehaviour
     void Update()
     {
         candyCount = noDestroy.GetComponent<CommonVariables>().candyCount;
-        if (noDestroy.GetComponent<CommonVariables>().candyCount < 1000)
-        {
+        
+        if (bombActivated) {
             bombButton.GetComponent<Button>().interactable = false;
+        } else if (noDestroy.GetComponent<CommonVariables>().candyCount < bombPrice) {
+            bombButton.GetComponent<Button>().interactable = false;
+        } else {
+            bombButton.GetComponent<Button>().interactable = true;
         }
-        if (noDestroy.GetComponent<CommonVariables>().candyCount < 3000)
-        {
+
+        if (thunderActivated) {
             thunderButton.GetComponent<Button>().interactable = false;
+        } else if (noDestroy.GetComponent<CommonVariables>().candyCount < thunderPrice) {
+            thunderButton.GetComponent<Button>().interactable = false;
+        } else {
+            thunderButton.GetComponent<Button>().interactable = true;
         }
-        if (noDestroy.GetComponent<CommonVariables>().candyCount < 10000)
-        {
+
+        if (iceActivated) {
             iceButton.GetComponent<Button>().interactable = false;
+        } else if (noDestroy.GetComponent<CommonVariables>().candyCount < icePrice) {
+            iceButton.GetComponent<Button>().interactable = false;
+        } else {
+            iceButton.GetComponent<Button>().interactable = true;
         }
     }
+    
     public void BuyBomb()
     {
-        if (noDestroy.GetComponent<CommonVariables>().candyCount >= 1000)
-        {
-            noDestroy.GetComponent<CommonVariables>().subCandy(1000);
-            bombButton.GetComponent<Button>().interactable = false;
-            bombActivated = true;
-        } 
-        
-        else if (noDestroy.GetComponent<CommonVariables>().candyCount < 1000)
-        {
-            bombButton.GetComponent<Button>().interactable = false;
-        }
+        noDestroy.GetComponent<CommonVariables>().subCandy(bombPrice);
+        bombButton.GetComponent<Button>().interactable = false;
+        bombActivated = true;
     }
 
     public void BuyThunder()
     {
-        if (noDestroy.GetComponent<CommonVariables>().candyCount >= 3000)
-        {
-            noDestroy.GetComponent<CommonVariables>().subCandy(3000);
-            thunderButton.GetComponent<Button>().interactable = false;
-            thunderActivated = true;
-        } 
+        noDestroy.GetComponent<CommonVariables>().subCandy(thunderPrice);
+        thunderButton.GetComponent<Button>().interactable = false;
+        thunderActivated = true;
     }
 
     public void BuyIce()
-        {
-            if (noDestroy.GetComponent<CommonVariables>().candyCount >= 10000)
-            {
-                noDestroy.GetComponent<CommonVariables>().subCandy(10000);
-                iceButton.GetComponent<Button>().interactable = false;
-                iceActivated = true;
-            } 
-            
-            else if (noDestroy.GetComponent<CommonVariables>().candyCount < 10000)
-            {
-                iceButton.GetComponent<Button>().interactable = false;
-            }
-        }
+    {
+        noDestroy.GetComponent<CommonVariables>().subCandy(icePrice);
+        iceButton.GetComponent<Button>().interactable = false;
+        iceActivated = true;
+    }
 
 
 
