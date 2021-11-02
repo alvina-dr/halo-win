@@ -88,7 +88,13 @@ public class TreeHouse : MonoBehaviour
             gameOverMenu.SetActive(true);
             thiago.SetActive(false);
             uiInGame.SetActive(false);
-            Destroy(this.gameObject);                    
+            healthText.text = currentHealth + "/" + maxHealth;
+            this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            this.gameObject.GetComponent<Collider2D>().enabled = false;     
+            GameObject.Find("Row (1)").SetActive(false);
+            GameObject.Find("Row (2)").SetActive(false);
+            GameObject.Find("Row (3)").SetActive(false);
+
         }
          
         healthBar.SetHealth(currentHealth);

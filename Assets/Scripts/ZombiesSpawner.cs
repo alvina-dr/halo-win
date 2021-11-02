@@ -30,8 +30,6 @@ public class ZombiesSpawner : MonoBehaviour
                 GameObject zombieInstance = Instantiate(zombiesPrefabs[(int)zombie.zombieType], transform.GetChild(zombie.Spawner).transform);
                 transform.GetChild(zombie.Spawner).GetComponent<SpawnPoint>().zombies.Add(zombieInstance);
                 zombie.isSpawned = true;
-                Debug.Log("Zombie spawn" + time);
-                Debug.Log("Zombie spawn" + waveTime);
             } 
         }
     }

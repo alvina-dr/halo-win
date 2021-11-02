@@ -12,7 +12,8 @@ public class CommonVariables : MonoBehaviour
 
     public int score;
     public string scoreString;
-    public Text scoreText;
+    public Text scoreTextWin;
+    public Text scoreTextLose;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,9 @@ public class CommonVariables : MonoBehaviour
     void Update()
     {
         candyCountText.text = "" + candyCount;   
-        scoreText.text = "" + score;     
+        scoreTextWin.text = "" + score;
+        scoreTextLose.text = "" + score;     
+
     }
 
     public void addCandy(int number) {

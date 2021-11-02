@@ -44,7 +44,7 @@ public class EnemyController : MonoBehaviour
         {
             StartCoroutine(SufferThunderAttack(collision));
         }
-                if (collision.gameObject.layer == 9)
+        if (collision.gameObject.layer == 9)
         {
             StartCoroutine(SufferBombAttack(collision));
         }
@@ -52,19 +52,22 @@ public class EnemyController : MonoBehaviour
 
     IEnumerator Attack(Collider2D collision)
     {
-        if (collision == null)
+        if (collision = GameObject.FindGameObjectWithTag("Treehouse").GetComponent<Collider2D>())
+        { 
+            if (GameObject.FindGameObjectWithTag("Treehouse").GetComponent<TreeHouse>().currentHealth > 0) 
+            {
+                collision.gameObject.GetComponent<TreeHouse>().ReceiveDamage(attackDamage);
+                this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", true);
+                yield return new WaitForSeconds(attackCooldown);
+                StartCoroutine(Attack(collision)); 
+            } else {
+                this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", false);
+                isStopped = false;
+            }
+        } else
         {
             this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", false);
             isStopped = false;
-            //Debug.Log("GAME OVER");
-
-        }
-        else if (collision = GameObject.FindGameObjectWithTag("Treehouse").GetComponent<Collider2D>())
-        {
-            collision.gameObject.GetComponent<TreeHouse>().ReceiveDamage(attackDamage);
-            this.gameObject.GetComponentInChildren<Animator>().SetBool("animAttack", true);
-            yield return new WaitForSeconds(attackCooldown);
-            StartCoroutine(Attack(collision));            
         }
     }
 
