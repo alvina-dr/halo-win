@@ -75,7 +75,7 @@ public static class Leaderboard {
         SaveScores();
     }
 
-        public static bool CheckScore(int currentScore) {
+    public static bool CheckScore(int currentScore) {
         for (int i = 0; i < EntryCount; ++i) {
             if(Entries[i].score < currentScore)
                 {

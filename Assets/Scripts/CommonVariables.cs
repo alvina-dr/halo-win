@@ -9,6 +9,7 @@ public class CommonVariables : MonoBehaviour
     public int candyCount = 0;
     public Text candyCountText;
     public GameObject treeHouse;
+    public Text candyBonusText;
 
     public int score;
     public string scoreString;
@@ -26,7 +27,8 @@ public class CommonVariables : MonoBehaviour
     {
         candyCountText.text = "" + candyCount;   
         scoreTextWin.text = "" + score;
-        scoreTextLose.text = "" + score;     
+        scoreTextLose.text = "" + score;
+        candyBonusText.text = "" + GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().levelCandyBonus;
 
     }
 
@@ -45,5 +47,9 @@ public class CommonVariables : MonoBehaviour
     public void SetScore() {
         scoreString = "" + score;
         PlayerPrefs.SetString("_scoreImput", scoreString);
+    }
+
+    public void GetLevelBonus() {
+        addCandy(GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().levelCandyBonus);
     }
 }

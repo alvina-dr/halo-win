@@ -26,12 +26,12 @@ public class StartFight : MonoBehaviour
         if (fight) {
             cameraObject.orthographicSize = Mathf.Lerp(cameraObject.orthographicSize, 270, 0.01f);
             cameraObject.transform.position = Vector3.MoveTowards(cameraObject.transform.position, new Vector3(-20, 0, -510), 0.7f);
-            if (spawner.GetComponent<ZombiesSpawner>().numberZombieDead == spawner.GetComponent<ZombiesSpawner>().numberAllZombie)
+            if (spawner.GetComponent<ZombiesSpawner>().numberZombieDead == spawner.GetComponent<ZombiesSpawner>().numberAllZombie) //WIN
             {
-                if (spawner.GetComponent<ZombiesSpawner>().lastLevel) {
+                if (spawner.GetComponent<ZombiesSpawner>().lastLevel) { //WIN DERNIER NIVEAU
                     winLastLevelUI.SetActive(true);
                     fight = false;
-                } else {
+                } else { //WIN NIVEAU LAMBDA
                     winUI.SetActive(true);
                     fight = false;
                 }
@@ -55,4 +55,6 @@ public class StartFight : MonoBehaviour
         spawner.SetActive(true);
         spawner.GetComponent<ZombiesSpawner>().SetTime(Time.time);
     }
+
+
 }

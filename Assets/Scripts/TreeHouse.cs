@@ -82,7 +82,7 @@ public class TreeHouse : MonoBehaviour
     {
         currentHealth = currentHealth - damage;
          
-        if (currentHealth <= 0)
+        if (currentHealth <= 0) //GAME OVER
         {
             currentHealth = 0;
             gameOverMenu.SetActive(true);

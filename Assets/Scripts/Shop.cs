@@ -18,10 +18,8 @@ public class Shop : MonoBehaviour
     public int thunderPrice;
     public int icePrice;
 
-
     public int candyCount;
     
-
 
     void Start() 
     {
@@ -57,7 +55,7 @@ public class Shop : MonoBehaviour
             iceButton.GetComponent<Button>().interactable = true;
         }
     }
-    
+
     public void BuyBomb()
     {
         noDestroy.GetComponent<CommonVariables>().subCandy(bombPrice);
@@ -78,71 +76,4 @@ public class Shop : MonoBehaviour
         iceButton.GetComponent<Button>().interactable = false;
         iceActivated = true;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    // public bool buyItem;
-    // public string Bomb;
-
-    // public bool itemCollected;
-
-
-    // void OnInputBuyItem(string itemName)
-    // {
-    //     if (buyItem == true)
-    //     {
-    //         switch(itemName) 
-    //         {
-    //             case Item.Bomb:
-    //                 ReduceCandy();
-    //                 break;
-                    
-    //             case Item.Thunder:
-    //                 ReduceCandy();
-    //                 break;
-
-    //             case Item.Ice:
-    //                 ReduceCandy();
-    //                 break;
-
-    //             default:
-    //                 Debug.Log("Item non sélectionné.");
-    //                 break;
-    //         }
-    //     }
-    //     else 
-    //     {
-
-    //     }
-    // }
-
-    // void ReduceCandy()
-    // {
-    //     if (Item = Item.Bomb)
-    //     {
-    //         itemCollected = true;
-    //         GetComponent<CommonVariables>().transform.candyCount(-500); 
-    //     }
-    //     else if (Item.Thunder)
-    //     {
-    //         itemCollected = true;
-    //         GetComponent<CommonVariables>().transform.candyCount(-1500); 
-    //     }
-    //     else
-    //     {
-    //         itemCollected = true;
-    //         GetComponent<CommonVariables>().transform.candyCount(-3000); 
-    //     }
-    // }
-
-
 }

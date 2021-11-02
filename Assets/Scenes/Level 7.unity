@@ -156,7 +156,6 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1571126624}
   zombies: []
@@ -315,7 +314,6 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1229550996}
   zombies: []
@@ -392,7 +390,6 @@ MonoBehaviour:
   bullet: {fileID: 6579758761967244942, guid: 11ad8d75ba1f8b549a08eb554a2f318a, type: 3}
   toAttack: {fileID: 0}
   attackCooldown: 1
-  DamageValue: 5
   gameManager: {fileID: 0}
   spawnPoint: {fileID: 1448729670}
   zombies: []
@@ -865,7 +862,10 @@ MonoBehaviour:
   numberZombieDead: -10
   numberAllZombie: 0
   time: 0
+  waveTime: 0
+  timeStarted: 0
   lastLevel: 0
+  levelCandyBonus: 2000
 --- !u!1001 &1229550993
 PrefabInstance:
   m_ObjectHideFlags: 0

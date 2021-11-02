@@ -11,7 +11,9 @@ public class ZombiesSpawner : MonoBehaviour
     public float time;
     public float waveTime;
     public float timeStarted;
+
     public bool lastLevel;
+    public int levelCandyBonus;
 
     void Start() {
         numberAllZombie = zombies.Count;
