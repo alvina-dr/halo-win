@@ -10,9 +10,10 @@ public class CommonVariables : MonoBehaviour
     public Text candyCountText;
     public GameObject treeHouse;
 
-    public string score = "0";
-    //public Text scoreText;
-
+    public int score;
+    public string scoreString;
+    public Text scoreText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,8 @@ public class CommonVariables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        candyCountText.text = "" + candyCount;        
+        candyCountText.text = "" + candyCount;   
+        scoreText.text = "" + score;     
     }
 
     public void addCandy(int number) {
@@ -32,9 +34,13 @@ public class CommonVariables : MonoBehaviour
     public void subCandy(int number) {
         candyCount -= number;
     }
+
+    public void addScore(int number) {
+        score += number;
+    }
     
     public void SetScore() {
-        score = "" + candyCount;
-        PlayerPrefs.SetString("_scoreImput", score);
+        scoreString = "" + score;
+        PlayerPrefs.SetString("_scoreImput", scoreString);
     }
 }

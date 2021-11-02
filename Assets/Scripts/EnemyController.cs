@@ -113,6 +113,7 @@ public class EnemyController : MonoBehaviour
             transform.parent.GetComponent<SpawnPoint>().zombies.Remove(this.gameObject);
             noDestroy.GetComponent<CommonVariables>().addCandy(candyLoot);
             GameObject.FindGameObjectWithTag("Spawner").GetComponent<ZombiesSpawner>().numberZombieDead += 1;
+            noDestroy.GetComponent<CommonVariables>().addScore(candyLoot);
             Destroy(this.gameObject);
         }
         else 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartFight : MonoBehaviour
 {
@@ -42,7 +43,6 @@ public class StartFight : MonoBehaviour
             cameraObject.transform.position = new Vector3(-165, -20, -390);
 
         }
-
     }
 
     public void StartFightFunction()
@@ -53,5 +53,6 @@ public class StartFight : MonoBehaviour
         phase1UI.SetActive(false);
         phase2UI.SetActive(true);
         spawner.SetActive(true);
+        spawner.GetComponent<ZombiesSpawner>().SetTime(Time.time);
     }
 }
