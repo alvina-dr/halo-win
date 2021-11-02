@@ -7,7 +7,7 @@ public class TreeHouseRows : MonoBehaviour
     public GameObject bullet;
     public GameObject toAttack;
     public float attackCooldown;
-    public int damageValue;
+    int damageValue;
     private float attackTime;
     public GameManager gameManager;
     public SpawnPoint spawnPoint;
