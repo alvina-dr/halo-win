@@ -1099,4 +1099,4 @@ MonoBehaviour:
   waveTime: 0
   timeStarted: 0
   lastLevel: 0
-  levelCandyBonus: 1500
+  levelCandyBonus: 3000

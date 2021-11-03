@@ -785,7 +785,7 @@ MonoBehaviour:
   waveTime: 0
   timeStarted: 0
   lastLevel: 0
-  levelCandyBonus: 1000
+  levelCandyBonus: 1500
 --- !u!1001 &1781450557
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -63,7 +63,7 @@ public class SpecialAttack : MonoBehaviour
         bombButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(1); //temps de l'attaque
         bombZone.SetActive(false);
-        yield return new WaitForSeconds(30); // temps de rechargement de l'attaque
+        yield return new WaitForSeconds(20); // temps de rechargement de l'attaque
         bombButton.GetComponent<Button>().interactable = true;
 
 
@@ -74,7 +74,7 @@ public class SpecialAttack : MonoBehaviour
         iceButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3); //temps de l'attaque
         iceZone.SetActive(false);
-        yield return new WaitForSeconds(70); // temps de rechargement de l'attaque
+        yield return new WaitForSeconds(30); // temps de rechargement de l'attaque
         iceButton.GetComponent<Button>().interactable = true;
 
 
@@ -83,7 +83,7 @@ public class SpecialAttack : MonoBehaviour
         thunderButton.GetComponent<Button>().interactable = false;
         yield return new WaitForSeconds(3); // temps de l'attaque
         thunderZone.SetActive(false);
-        yield return new WaitForSeconds(100); // temps de rechargement de l'attaque
+        yield return new WaitForSeconds(40); // temps de rechargement de l'attaque
         thunderButton.GetComponent<Button>().interactable = true;
 
 

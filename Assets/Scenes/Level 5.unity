@@ -1017,7 +1017,7 @@ MonoBehaviour:
   waveTime: 0
   timeStarted: 0
   lastLevel: 0
-  levelCandyBonus: 1500
+  levelCandyBonus: 2500
 --- !u!1 &2128453415
 GameObject:
   m_ObjectHideFlags: 0

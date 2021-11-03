@@ -690,7 +690,7 @@ MonoBehaviour:
   waveTime: 0
   timeStarted: 0
   lastLevel: 1
-  levelCandyBonus: 3000
+  levelCandyBonus: 4500
 --- !u!4 &1055029617
 Transform:
   m_ObjectHideFlags: 0
