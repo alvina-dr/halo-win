@@ -210,7 +210,8 @@ GameObject:
   - component: {fileID: 23889559}
   - component: {fileID: 23889558}
   - component: {fileID: 23889560}
-  m_Layer: 5
+  - component: {fileID: 23889561}
+  m_Layer: 14
   m_Name: Zone 2/2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23889556}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -300,6 +301,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &23889561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23889556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 23889558}
 --- !u!1 &30672170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,8 +1263,9 @@ GameObject:
   - component: {fileID: 138014003}
   - component: {fileID: 138014002}
   - component: {fileID: 138014004}
-  m_Layer: 5
-  m_Name: Zone 4/2   (2)
+  - component: {fileID: 138014005}
+  m_Layer: 14
+  m_Name: Zone 4/1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1297,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138014000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1337,6 +1354,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &138014005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138014000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 138014002}
 --- !u!1 &140055645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +2085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &222004657
 Transform:
   m_ObjectHideFlags: 0
@@ -2704,7 +2736,8 @@ GameObject:
   - component: {fileID: 258755086}
   - component: {fileID: 258755085}
   - component: {fileID: 258755087}
-  m_Layer: 5
+  - component: {fileID: 258755088}
+  m_Layer: 14
   m_Name: 'Zone 3/2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2737,7 +2770,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258755083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2794,6 +2827,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &258755088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258755083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 258755085}
 --- !u!1 &260182731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3834,7 +3882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &314034631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4041,8 +4089,9 @@ GameObject:
   - component: {fileID: 335518056}
   - component: {fileID: 335518055}
   - component: {fileID: 335518057}
-  m_Layer: 5
-  m_Name: Zone 3/2  (1)
+  - component: {fileID: 335518058}
+  m_Layer: 14
+  m_Name: Zone 3/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4074,7 +4123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335518053}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4131,6 +4180,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &335518058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335518053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 335518055}
 --- !u!1 &340536661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5429,8 +5493,9 @@ GameObject:
   - component: {fileID: 382580988}
   - component: {fileID: 382580987}
   - component: {fileID: 382580989}
-  m_Layer: 5
-  m_Name: Zone 1/2 (2)
+  - component: {fileID: 382580990}
+  m_Layer: 14
+  m_Name: Zone 1/1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5462,7 +5527,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382580985}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -5519,6 +5584,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &382580990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382580985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 382580987}
 --- !u!1 &384041116
 GameObject:
   m_ObjectHideFlags: 0
@@ -6388,8 +6468,9 @@ GameObject:
   - component: {fileID: 464921573}
   - component: {fileID: 464921572}
   - component: {fileID: 464921574}
-  m_Layer: 5
-  m_Name: Zone 3/2  (2)
+  - component: {fileID: 464921575}
+  m_Layer: 14
+  m_Name: Zone 3/1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6421,7 +6502,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464921570}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -6478,6 +6559,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &464921575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464921570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 464921572}
 --- !u!1 &466808724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7025,6 +7121,7 @@ GameObject:
   - component: {fileID: 520078348}
   - component: {fileID: 520078347}
   - component: {fileID: 520078346}
+  - component: {fileID: 520078349}
   m_Layer: 5
   m_Name: Bouton Bomb
   m_TagString: Untagged
@@ -7146,6 +7243,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520078344}
   m_CullTransparentMesh: 0
+--- !u!114 &520078349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520078344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83e45830f221e440896a7e07fcbd302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object_Drag: {fileID: 7675643169992150737, guid: 732025371cb4bc1409ac3e6531703b52, type: 3}
+  object_Game: {fileID: 7265073614724206407, guid: 21d351c3ff705f243b451e87d73ac194, type: 3}
+  canvas: {fileID: 1470081315}
 --- !u!1 &523094358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7550,7 +7662,8 @@ GameObject:
   - component: {fileID: 544524737}
   - component: {fileID: 544524736}
   - component: {fileID: 544524738}
-  m_Layer: 5
+  - component: {fileID: 544524739}
+  m_Layer: 14
   m_Name: 'Zone 5/2   '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7583,7 +7696,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544524734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7640,6 +7753,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &544524739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544524734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 544524736}
 --- !u!114 &564261841 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6125995709813517691, guid: 7ac30aeed77ec034d9e35d471c81ff03, type: 3}
@@ -8910,8 +9038,9 @@ GameObject:
   - component: {fileID: 692109393}
   - component: {fileID: 692109392}
   - component: {fileID: 692109394}
-  m_Layer: 5
-  m_Name: Zone 5/2    (2)
+  - component: {fileID: 692109395}
+  m_Layer: 14
+  m_Name: Zone 5/1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8943,7 +9072,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692109390}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9000,6 +9129,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &692109395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692109390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 692109392}
 --- !u!1 &717473106
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +9959,8 @@ GameObject:
   - component: {fileID: 816523690}
   - component: {fileID: 816523689}
   - component: {fileID: 816523691}
-  m_Layer: 5
+  - component: {fileID: 816523692}
+  m_Layer: 14
   m_Name: 'Zone 4/2  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9848,7 +9993,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816523687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9905,6 +10050,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &816523692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816523687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 816523689}
 --- !u!1 &816637062
 GameObject:
   m_ObjectHideFlags: 0
@@ -10658,7 +10818,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 65, y: 46.6}
+  m_Size: {x: 65, y: 65}
   m_EdgeRadius: 0
 --- !u!4 &854306659
 Transform:
@@ -10668,8 +10828,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854306657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62, y: -81, z: 0}
-  m_LocalScale: {x: 1.8, y: 2.2, z: 1}
+  m_LocalPosition: {x: -62, y: -89.31, z: 0}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1488523945}
   m_RootOrder: 0
@@ -15353,6 +15513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16cc86b2ff415524caee34b8a59eda7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  draggingObject: {fileID: 0}
+  currentContainer: {fileID: 0}
 --- !u!4 &1172741408
 Transform:
   m_ObjectHideFlags: 0
@@ -17865,8 +18027,9 @@ GameObject:
   - component: {fileID: 1394772774}
   - component: {fileID: 1394772773}
   - component: {fileID: 1394772775}
-  m_Layer: 5
-  m_Name: Zone 1/2 (1)
+  - component: {fileID: 1394772776}
+  m_Layer: 14
+  m_Name: Zone 1/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17898,7 +18061,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394772771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -17955,6 +18118,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &1394772776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394772771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 1394772773}
 --- !u!1 &1419937199
 GameObject:
   m_ObjectHideFlags: 0
@@ -18575,8 +18753,9 @@ GameObject:
   - component: {fileID: 1447278356}
   - component: {fileID: 1447278355}
   - component: {fileID: 1447278357}
-  m_Layer: 5
-  m_Name: Zone 2/2 (2)
+  - component: {fileID: 1447278358}
+  m_Layer: 14
+  m_Name: Zone 2/1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18608,7 +18787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447278353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -18665,6 +18844,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &1447278358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447278353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 1447278355}
 --- !u!1 &1462368608
 GameObject:
   m_ObjectHideFlags: 0
@@ -20946,8 +21140,9 @@ GameObject:
   - component: {fileID: 1577089168}
   - component: {fileID: 1577089167}
   - component: {fileID: 1577089169}
-  m_Layer: 5
-  m_Name: Zone 4/2   (1)
+  - component: {fileID: 1577089170}
+  m_Layer: 14
+  m_Name: Zone 4/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20979,7 +21174,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577089165}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -21036,6 +21231,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &1577089170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577089165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 1577089167}
 --- !u!1 &1582058650
 GameObject:
   m_ObjectHideFlags: 0
@@ -22115,8 +22325,9 @@ GameObject:
   - component: {fileID: 1670335164}
   - component: {fileID: 1670335163}
   - component: {fileID: 1670335165}
-  m_Layer: 5
-  m_Name: Zone 2/2 (1)
+  - component: {fileID: 1670335166}
+  m_Layer: 14
+  m_Name: Zone 2/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22148,7 +22359,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670335161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -22205,6 +22416,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &1670335166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670335161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 1670335163}
 --- !u!1 &1679400295
 GameObject:
   m_ObjectHideFlags: 0
@@ -23100,8 +23326,9 @@ GameObject:
   - component: {fileID: 1759495616}
   - component: {fileID: 1759495615}
   - component: {fileID: 1759495617}
-  m_Layer: 5
-  m_Name: Zone 5/2    (1)
+  - component: {fileID: 1759495618}
+  m_Layer: 14
+  m_Name: Zone 5/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23133,7 +23360,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759495613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -23190,6 +23417,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &1759495618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759495613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 1759495615}
 --- !u!1 &1784701670
 GameObject:
   m_ObjectHideFlags: 0
@@ -27247,7 +27489,8 @@ GameObject:
   - component: {fileID: 2132823862}
   - component: {fileID: 2132823861}
   - component: {fileID: 2132823863}
-  m_Layer: 5
+  - component: {fileID: 2132823864}
+  m_Layer: 14
   m_Name: Zone 1/2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27280,7 +27523,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132823859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -27337,6 +27580,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &2132823864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132823859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6384d53d9bfb24e489ec66d6f9afdd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  gameManager: {fileID: 1172741407}
+  backgroundImage: {fileID: 2132823861}
 --- !u!1 &2140277603
 GameObject:
   m_ObjectHideFlags: 0

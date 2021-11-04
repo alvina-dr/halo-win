@@ -23,8 +23,8 @@ TagManager:
   - Object
   - Zombie
   - Bullet
-  - 
-  - 
+  - DraggingSpell
+  - Container
   - 
   - 
   - 
